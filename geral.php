@@ -7,6 +7,7 @@
 <input type='button' onclick="window.location='index.php';" value="Voltar">
 <b>Clique na imagem para ver detalhes</b><br><br>
 <?php
+
 	include_once('conexao.php');
 	
 	$query = mysqli_query($conexao,"select * from livro order by titulo");

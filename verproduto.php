@@ -5,7 +5,6 @@
     <body>
         <h3>Detalhes</h3>
         <?php
-
         function convertedata($data) {
             $data_vetor = explode('-', $data);
             $novadata = implode('/', array_reverse($data_vetor));
@@ -41,7 +40,7 @@
         echo "<b>Codigo: </b>" . $dados['codigo'] . "<br>";
         echo "<b>Titulo: </b>" . $dados['titulo'] . "<br>";
         echo "<b>Descrição: </b>" . $dados['descricao'] . "<br>";
-        echo "<b>Data: </b>" . $dados['data'] . "<br>";
+        echo "<b>Data: </b>" . $dados['dataL'] . "<br>";
         echo "<b>Idioma: </b>" . $dados['idioma'] . "<br>";
         echo "<b>Edição: </b>" . $dados['edicao'] . "<br>";
         echo "<b>Autor: </b>" . $dados['autor'] . "<br>";

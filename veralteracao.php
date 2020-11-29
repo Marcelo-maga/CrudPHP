@@ -28,10 +28,9 @@
         mysqli_close($conexao);
         ?>
         <form name="produto" action="alterar.php" method="POST">
-        <b>Código:</b> <input type="number"  value="<?php echo $dados['codigo']; ?>" readonly ><br><br>
         <b>Titulo:</b> <input type="text" value="<?php echo $dados['titulo']; ?>"><br><br>
         <b>Descrição: </b><br><textarea  rows='3' cols='100' style="resize: none;"><?php echo $dados['descricao']; ?></textarea><br><br>
-        <b>Data: </b> <input type="text" value="<?php echo $dados['data']; ?>"><br><br>
+        <b>Data: </b> <input type="text" value="<?php echo $dados['dataL']; ?>"><br><br>
         <b>Quantidade de Págians</b> <input type="number" value="<?php echo $dados['qtdPags']; ?>"><br><br>
         <b>Editora</b> <input type="text" value="<?php echo $dados['editora']; ?>"><br><br>
         <b>Idioma</b> <input type="text" value="<?php echo $dados['idioma']; ?>"><br><br>

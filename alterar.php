@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <meta charset="UTF-8">
     <title>Livraria</title>
@@ -6,11 +5,10 @@
         <h3>Alteração</h3>
         <?php
         include_once('conexao.php');
-
-        $codigo = $_POST['codigo'];
+        $codigo = $_POST['codigo']
         $titulo = $_POST['titulo'];
         $descricao = $_POST['descricao'];
-        $data = $_POST['data'];
+        $dataL = $_POST['dataL'];
         $idioma = $_POST['idioma'];
         $edicao = $_POST['edicao'];
         $autor = $_POST['autor'];
@@ -18,7 +16,8 @@
         $qtdPags = $_POST['qtdPags'];
         $editora = $_POST['editora'];
 
-        $sqlupdate = "update livro set titulo='$titulo', descricao='$descricao', data='$data', idioma='$idioma', edicao='$edicao', autor='$autor', arte='$arte', qtdPags='$qtdPags', editora='$editora' where codigo=$codigo";
+        $sqlupdate = "UPDATE livro SET titulo='$titulo', descricao='$descricao', dataL='$dataL', idioma='$idioma', edicao='$edicao',
+        autor='$autor', arte='$arte', qtdPags='$qtdPags', editora='$editora' WHERE codigo=$codigo";
 
         $resultado = @mysqli_query($conexao, $sqlupdate);
         if (!$resultado) {

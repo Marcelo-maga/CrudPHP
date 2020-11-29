@@ -4,6 +4,7 @@
     <body>
         <h3>Consulta do Produto</h3>
         <?php
+
         include_once('conexao.php');
 
         $codigo = $_POST['codigo'];

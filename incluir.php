@@ -5,12 +5,13 @@
     <body>
         <h3>Inclusão</h3>
         <?php
+
         include_once('conexao.php');
 
         $codigo = $_POST['codigo'];
         $titulo = $_POST['titulo'];
         $descricao = $_POST['descricao'];
-        $data = $_POST['data'];
+        $dataL = $_POST['dataL'];
         $idioma = $_POST['idioma'];
         $edicao = $_POST['edicao'];
         $autor = $_POST['autor'];
@@ -18,8 +19,8 @@
         $qtdPags = $_POST['qtdPags'];
         $editora = $_POST['editora'];
 
-        $sqlinsert = "insert into livro (codigo, titulo, descricao, data, idioma, edicao, autor, arte, qtdPags, editora) values ($codigo, 
-        '$titulo', '$descricao', '$data', '$idioma', $edicao, '$autor', '$arte', $qtdPags, '$editora')";
+        $sqlinsert = "insert into livro (codigo, titulo, descricao, dataL, idioma, edicao, autor, arte, qtdPags, editora) values ($codigo, 
+        '$titulo', '$descricao', '$dataL', '$idioma', $edicao, '$autor', '$arte', $qtdPags, '$editora')";
 
         $resultado = @mysqli_query($conexao, $sqlinsert);
         if (!$resultado) {

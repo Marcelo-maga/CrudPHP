@@ -30,7 +30,7 @@
         <b>Código:</b> <input type="number"  value="<?php echo $dados['codigo']; ?>" readonly ><br><br>
         <b>Titulo:</b> <input type="text" value="<?php echo $dados['titulo']; ?>" readonly ><br><br>
         <b>Descrição: </b><br><textarea  rows='3' cols='100' style="resize: none;" readonly ><?php echo $dados['descricao']; ?></textarea><br><br>
-        <b>Data: </b> <input type="text" value="<?php echo $dados['data']; ?>" readonly ><br><br>
+        <b>Data: </b> <input type="text" value="<?php echo $dados['dataL']; ?>" readonly ><br><br>
         <b>Quantidade de Págians</b> <input type="number" value="<?php echo $dados['qtdPags']; ?>" readonly ><br><br>
         <b>Editora</b> <input type="text" value="<?php echo $dados['editora']; ?>" readonly ><br><br>
         <b>Idioma</b> <input type="text" value="<?php echo $dados['idioma']; ?>" readonly ><br><br>
