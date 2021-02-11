@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Livraria</title>
-        <link rel="stylesheet" type="text/css" href="utils/style.css" media="screen"/>
-    </head>
-    <body class="body">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="utils/style.css" media="screen"/>
+    <title>Login</title>
+</head>
+<body class="body">
     <div class="container">
         <div class="menu">
-            <h3>Menu</h3>
-            <a href='inclusao.php'>Incluir</a><br>
-            <a href='consulta.php'>Consultar</a><br>
-            <a href='geral.php'>Consulta Geral</a><br>
-            <a href='exclusao.php'>Excluir</a><br>
-            <a href='alteracao.php'>Alterar</a><br>
-            <a href='upar.php'>Arquivos</a><br>
+        <form action="validarLogin.php" method="post">
+
+            <legend>Dados de Login</legend>
+            <b>Login:</b> <input type="text" name="nome"><br><br>
+            <b>Senha:</b> <input type="password" name="senha"><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
         </div>
     </div>
-    </body>
+</body>
 </html>

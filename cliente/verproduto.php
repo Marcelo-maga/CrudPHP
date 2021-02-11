@@ -11,7 +11,7 @@
             return $novadata;
         }
 
-        include_once('conexao.php');
+        include_once('../conexao.php');
 
 
         if (isset($_GET['id']) && is_numeric(base64_decode($_GET['id']))) {
@@ -19,7 +19,7 @@
         } else {
             header('Location: index.php');
         }
-        $query = mysqli_query($conexao, "select * from livro where id = $id");
+        $query = mysqli_query($conexao, "select * from livros where id = $id");
 
         if (!$query) {
             echo '<input type="button" onclick="window.location=' . "'index.php'" . ';" value="Voltar"><br><br>';
@@ -36,7 +36,6 @@
         }
         echo "<img src='imagens/$imagem' >";
         echo "</td><td width='400px'>";
-        echo "<b>Id: </b>" . $dados['id'] . "<br>";
         echo "<b>Codigo: </b>" . $dados['codigo'] . "<br>";
         echo "<b>Titulo: </b>" . $dados['titulo'] . "<br>";
         echo "<b>Descrição: </b>" . $dados['descricao'] . "<br>";
@@ -52,6 +51,6 @@
         mysqli_close($conexao);
         ?>
         <br>
-        <input type='button' onclick="window.location = 'geral.php';" value="Voltar">
+        <input type='button' onclick="window.location = '../cliente/index.php';" value="Voltar">
     </body>
 </html>
